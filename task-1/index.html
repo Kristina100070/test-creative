@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <title>Тестовое</title>
+</head>
+<body>
+    <header>
+        <button class="header__burger-menu">
+            <div class="burger-menu__icon"></div>
+            <div class="burger-menu__icon"></div>
+            <div class="burger-menu__icon"></div>
+        </button>
+    </header>
+    <section class="main-section">
+        <aside class="menu-left"></aside>
+        <main class="main__content"></main>
+    </section>
+    <script>
+        document.querySelector('.header__burger-menu').onclick = function(){
+          document.querySelector('.menu-left').classList.toggle("menu-left_hidden");
+        }
+    </script>
+</body>
+</html>

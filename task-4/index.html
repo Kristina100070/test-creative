@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое</title>
+    <style>
+        input:checked + span {
+         display: none;
+        }
+        .input__container:checked ~.input_checked {
+            display: none;
+        }
+        
+       </style>
+</head>
+<body>
+  <input class="input__container" type="checkbox" name="name"><span>Нажми - и исчезнет все</span><br>
+    <input class="input_checked" type="checkbox" name="name"><span class="input_checked">Нажми - и я исчезну</span><br>
+    <input class="input_checked" type="checkbox" name="name"><span class="input_checked">Нажми - и я исчезну</span><br>
+    <input class="input_checked" type="checkbox" name="name"><span class="input_checked">Нажми - и я исчезну</span><br>
+</body>
+</html>
